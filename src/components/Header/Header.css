@@ -1,0 +1,10 @@
+.header{
+    border-bottom: 1px solid lightgray;
+}
+.main-title{
+    font-style: italic;
+    color: #FB3644;
+}
+.main-title span{
+    color: darkslategray;
+}
