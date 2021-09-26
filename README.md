@@ -9,4 +9,4 @@ Live Link: [Tv-Flix](https://github.com/facebook/create-react-app)
 
 ### `State change functionality added by clicking add button`
 
-### `It'll be upsated in future like search functionality etc`
+### `It'll be updated in future like search functionality etc`
