@@ -27,7 +27,7 @@ const Cards = (props) => {
                         emptyIcon={<i className="far fa-star"></i>}
                         halfIcon={<i className="fa fa-star-half-alt"></i>}
                         fullIcon={<i className="fa fa-star"></i>}>
-                        </ReactStars>
+                    </ReactStars>
             
             </div>
             <button  onClick={()=>props.showInfo(serial)} className="btn btn-success mb-2">{icon}Add to watchlist</button>

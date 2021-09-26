@@ -30,7 +30,7 @@ const Main = () => {
                     series.map(serial => <Cards showInfo={showInfo} key={serial.id} serial={serial}></Cards>)
                 }
             </div>
-            <div className="col-md-2 bg-dark text-light p-2 h-50">
+            <div className="col-md-2 bg-dark text-light p-2 h-50 rounded">
                 <h3 className="text-warning mb-5">Details</h3>
                 <div className="d-flex">
                     <h6>Wtchlisted:</h6>
