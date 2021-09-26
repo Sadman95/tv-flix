@@ -18,7 +18,7 @@ const Cards = (props) => {
             <p>Firsr Released: {firstReleasedYear}</p>
             <ul className="genre-list">Genre: {genre.map(item => <li>{item}</li>)}</ul>
             <div style={{width: "30%", margin: "auto"}}>
-            <p>Rating: <ReactStars
+            Rating: <ReactStars
                         count={5}
                         value={rating/2}
                         size={24}
@@ -28,7 +28,7 @@ const Cards = (props) => {
                         halfIcon={<i className="fa fa-star-half-alt"></i>}
                         fullIcon={<i className="fa fa-star"></i>}>
                         </ReactStars>
-            </p>
+            
             </div>
             <button  onClick={()=>props.showInfo(serial)} className="btn btn-success mb-2">{icon}Add to watchlist</button>
         </div>

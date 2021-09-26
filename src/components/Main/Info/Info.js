@@ -6,7 +6,7 @@ const Info = (props) => {
     // console.log(props.serial)
     return (
         <div>
-            <ul className="watch-list">
+            <ul className="watch-list p-0 ms-2">
                 <li className="bg-primary text-light rounded p-1" >{title}({seasons})</li>
             </ul>
         </div>
