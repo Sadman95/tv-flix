@@ -15,7 +15,7 @@ const Cards = (props) => {
             <h3 className="text-danger my-1">{title}</h3>
             <p className="fw-bold">Created By: {directors}</p>
             <p>Seasons: {seasons}</p>
-            <p>Firsr Released: {firstReleasedYear}</p>
+            <p>First Released: {firstReleasedYear}</p>
             <ul className="genre-list">Genre: {genre.map(item => <li>{item}</li>)}</ul>
             <div style={{width: "30%", margin: "auto"}}>
             Rating: <ReactStars
