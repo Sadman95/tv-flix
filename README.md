@@ -1,6 +1,6 @@
 # Tv Flix-popular tv series are here
 
-Live Link: [Tv-Flix](https://github.com/facebook/create-react-app)
+Live Link: [Tv-Flix](https://tv-flix.netlify.app/)
 
 ## Features
 
