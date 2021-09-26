@@ -24,14 +24,14 @@ const Main = () => {
 
     return (
         <div className="row my-4">
-            <h2>Total found: {series.length}</h2>
+            <h2 style={{fontStyle: "italic"}}>Total found: {series.length}</h2>
             <div className="series-display col-md-10">
                 {
                     series.map(serial => <Cards showInfo={showInfo} key={serial.id} serial={serial}></Cards>)
                 }
             </div>
-            <div className="col-md-2">
-                <h3>Details</h3>
+            <div className="col-md-2 bg-dark text-light p-2 h-50">
+                <h3 className="text-warning mb-5">Details</h3>
                 <div className="d-flex">
                     <h6>Wtchlisted:</h6>
                     <div>

@@ -1,7 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPlusSquare } from '@fortawesome/free-solid-svg-icons'
+import { faPlusSquare} from '@fortawesome/free-solid-svg-icons'
 import './Cards.css'
+import ReactStars from "react-rating-stars-component";
 
 const icon = <FontAwesomeIcon className="me-1" icon={faPlusSquare}></FontAwesomeIcon>;
 const Cards = (props) => {
@@ -9,15 +10,27 @@ const Cards = (props) => {
     const {serial} = props;
     const {poster, title, directors, seasons, firstReleasedYear, genre, rating} = serial;
     return (
-        <div>
+        <div className="card-style">
             <img className="poster" src={poster} alt="" />
-            <h3>{title}</h3>
-            <p>Created By: {directors}</p>
+            <h3 className="text-danger my-1">{title}</h3>
+            <p className="fw-bold">Created By: {directors}</p>
             <p>Seasons: {seasons}</p>
             <p>Firsr Released: {firstReleasedYear}</p>
             <ul className="genre-list">Genre: {genre.map(item => <li>{item}</li>)}</ul>
-            <p>Rating: {rating}</p>
-            <button  onClick={()=>props.showInfo(serial)} className="btn btn-success">{icon}Add to watchlist</button>
+            <div style={{width: "30%", margin: "auto"}}>
+            <p>Rating: <ReactStars
+                        count={5}
+                        value={rating/2}
+                        size={24}
+                        edit={false}
+                        activeColor="orangeRed"
+                        emptyIcon={<i className="far fa-star"></i>}
+                        halfIcon={<i className="fa fa-star-half-alt"></i>}
+                        fullIcon={<i className="fa fa-star"></i>}>
+                        </ReactStars>
+            </p>
+            </div>
+            <button  onClick={()=>props.showInfo(serial)} className="btn btn-success mb-2">{icon}Add to watchlist</button>
         </div>
     );
 };
