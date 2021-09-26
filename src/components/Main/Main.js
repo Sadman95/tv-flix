@@ -35,8 +35,8 @@ const Main = () => {
                 <div className="d-flex">
                     <h6>Wtchlisted:</h6>
                     <div>
-                        {
-                        selected.map(selection => <Info selected={selection}></Info>)
+                        {  
+                        selected.map((selection, i) => <Info key={i} selected={selection}></Info>)
                         }
                     </div>
                 </div>
