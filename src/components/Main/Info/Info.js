@@ -3,7 +3,6 @@ import './Info.css'
 
 const Info = (props) => {
     const {title, seasons} = props.selected;
-    // console.log(props.serial)
     return (
         <div>
             <ul className="watch-list p-0 ms-2">
