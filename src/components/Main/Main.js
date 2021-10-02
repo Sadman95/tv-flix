@@ -17,10 +17,20 @@ const Main = () => {
         // new add to info section:
         const [selected, setSelected] = useState([]);
         //   onclick handler:
+        
         const showInfo = (serial) =>{
             const newAdded = [...selected, serial];
             setSelected(newAdded)
         }
+
+        // total update:
+        let total = 0;
+        for(const item of selected){
+            total = total + item.price;
+        }
+
+
+
 
     return (
         <div className="row my-4">
@@ -41,6 +51,7 @@ const Main = () => {
                     </div>
                 </div>
                 <h6 className="text-start">Added: {selected.length}</h6>
+                <h5>Total: ${total}</h5>
             </div>
         </div>
     );

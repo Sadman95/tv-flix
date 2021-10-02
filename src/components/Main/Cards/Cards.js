@@ -8,7 +8,8 @@ const icon = <FontAwesomeIcon className="me-1" icon={faPlusSquare}></FontAwesome
 const Cards = (props) => {
     // console.log(props)
     const {serial} = props;
-    const {poster, title, directors, seasons, firstReleasedYear, genre, rating} = serial;
+    const {price, poster, title, directors, seasons, firstReleasedYear, genre, rating} = serial;
+    
     return (
         <div className="card-style">
             <img className="poster" src={poster} alt="" />
@@ -30,6 +31,7 @@ const Cards = (props) => {
                     </ReactStars>
             
             </div>
+            <h6>Price: ${price}</h6>
             <button  onClick={()=>props.showInfo(serial)} className="btn btn-success mb-2">{icon}Add to watchlist</button>
         </div>
     );
